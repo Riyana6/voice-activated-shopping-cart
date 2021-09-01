@@ -1,0 +1,32 @@
+{
+  "name": "e-commerce-cart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "@alan-ai/alan-sdk-web": "^1.8.28",
+    "concurrently": "^6.2.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.7",
+    "nodemon": "^2.0.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node backend/server.js",
+    "server": "nodemon backend/server.js",
+    "client": "npm start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node backend/seederScript"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Riyana6/e-commerce-cart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Riyana6/e-commerce-cart/issues"
+  },
+  "homepage": "https://github.com/Riyana6/e-commerce-cart#readme"
+}
